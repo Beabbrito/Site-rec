@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body
+{
+    background-color: rgb(135, 209, 222);
+    color: black;
+    font-size: 12pt;
+    font-family: Arial;
+}
+body
+{
+width: 100%;
+text-align: center;
+color:black;
+padding: 20px;
+background-image: linear-gradient(to right, #518e91, #51b793);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(rgb(0, 255, 213), rgb(0, 102, 128), rgb(0, 247, 255));
+
+}
+    h2{
+        color:rgb(59, 121, 113);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20pt;
+    }
+
+    #titulo1{
+        color:rgb(59, 112, 113)
+    }     

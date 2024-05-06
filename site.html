@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árvore Genealógica</title>
+  <link rel="stylesheet" href="styles.css">
+  <h1>Minha família</h1>
+    <p>Minha família é grande, meus avôs paternos tiveram 8 filhos e meus avôs maternos 12.
+     Tenho 10 primos(a) mais novos do que eu e 9 mais velhos. Hoje vamos conhecer um pouco da minha família: 
+     Pais, avôs, e irmã.</p>
+  <style>
+    .tree {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .node {
+      width: 120px;
+      height: 120px;
+      border: 2px solid #313937;
+      border-radius: 50%;
+      margin: 20px;
+      position: relative;
+    }
+    .node::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      border-left: 2px solid #51a09f;
+      height: 100%;
+    }
+    .node:first-child::before {
+      display: none;
+    }
+    .node::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      border-left: 2px solid #51a09f;
+      height: 50%;
+      transform: translateY(2px);
+    }
+    .node:last-child::after {
+      display: none;
+    }
+    .label {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="tree">
+    <div class="node">
+      <div class="label">Avó Materna</div>
+      <a href="vó materna.html" target="_blank">Vó materna</a>
+    </div>
+    <div class="node">
+      <div class="label">Avô Materno</div>
+      <a href="vô materno.html" target="_blank">Vô materno</a>
+    </div>
+    <div class="node">
+      <div class="label">Avô Paterno</div>
+      <a href="vô paterno.html" target="_blank">Vô paterno</a>
+    </div>
+    <div class="node">
+      <div class="label">Avó Paterna</div>
+      <a href="vó paterna.html" target="_blank">Vó paterna</a>
+    </div>
+  </div>
+  <div class="tree">
+    <div class="node">
+      <div class="label">Mãe</div>
+      <a href="mãe.html" target="_blank">Mãe</a>
+    </div>
+    <div class="node">
+      <div class="label">Pai</div>
+      <a href="pai.html" target="_blank">Pai</a>
+    </div>
+  </div>
+  <div class="tree">
+    <div class="node">
+      <div class="label">Filha 1</div>
+      <a href="irmã.html" target="_blank">Filha mais velha</a>
+    </div>
+    <div class="node">
+      <div class="label">Filha 2</div>
+      <a href="eu.html" target="_blank">Filha mais nova</a>
+    </div>
+  </div>
+</body>
+</html>
